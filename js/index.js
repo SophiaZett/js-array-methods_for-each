@@ -19,4 +19,22 @@ const colors = [
   "#A5A5A5",
 ];
 
-colors.forEach();
+/* task 1 */ 
+
+colors.forEach((color) => {
+
+  // erstellen eines neue div-elements
+  const colorBox = document.createElement("div");
+
+  // klasse zum div hinzufügen
+  colorBox.classList.add("color-box");
+
+  //setze die hintergrundfarbe des divs auf die aktuelle farbe
+  colorBox.style.backgroundColor = color;
+
+// füge das div dem body-element zu
+  document.body.append(colorBox);
+});
+
+/* task 2 */ 
+
